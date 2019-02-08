@@ -5,7 +5,7 @@ int number_from_N_to_1(int);
 int number_from_1_to_N(int);
 int number_from_1_to_N_with_sum(int);
 int number_from_N_to_1_with_sum(int);
-int sum_of_digit_of_number(int);
+int sum_of_1_to_N_of_number(int);
 
 int main(void)
 {
@@ -64,7 +64,7 @@ int main(void)
                         case 6 :
                                 printf("Enter the number to get the sum of number digit : ");
                                 scanf("%d",&num);
-                                printf("%d",sum_of_digit_of_number(num));
+                                printf("%d",sum_of_1_to_N_of_number(num));
                                 break;
 
                         default :
@@ -74,14 +74,14 @@ int main(void)
         return 0;
 }
 
-int sum_of_digit_of_number(int num )
+int sum_of_1_to_N_of_number(int num )
 {
         int sum;
 
         if(num == 0)
                 return 0;
 
-        sum = num + sum_of_digit_of_number(num -1);
+        sum = num + sum_of_1_to_N_of_number(num -1);
         return sum;
 }
 
