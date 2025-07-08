@@ -23,4 +23,9 @@ int sum_of_digit(int num )
         sum = (num % 10 ) + sum_of_digit(num / 10);
 //      printf("%d+",num%10);
         return sum;
+//Aamir test Pana
+
 }
+
+
+
